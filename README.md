@@ -1,3 +1,4 @@
+Just a quick hack to compile it on 2026 Slackware current ...
 
 # innoextract - A tool to unpack installers created by Inno Setup
 
