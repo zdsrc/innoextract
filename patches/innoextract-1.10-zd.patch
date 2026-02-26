@@ -1,0 +1,23 @@
+diff -Nur innoextract-1.9-src/CMakeLists.txt innoextract-1.9-zd/CMakeLists.txt
+--- innoextract-1.9-src/CMakeLists.txt	2020-08-09 20:48:04.000000000 +0200
++++ innoextract-1.9-zd/CMakeLists.txt	2026-02-23 05:26:00.203562717 +0100
+@@ -155,7 +155,6 @@
+ 	iostreams
+ 	filesystem
+ 	date_time
+-	system
+ 	program_options
+ )
+ list(APPEND LIBRARIES ${Boost_LIBRARIES})
+
+diff -Nur innoextract-1.9-src/src/stream/slice.cpp innoextract-1.9-zd/src/stream/slice.cpp
+--- innoextract-1.9-src/src/stream/slice.cpp	2020-08-09 20:48:04.000000000 +0200
++++ innoextract-1.9-zd/src/stream/slice.cpp	2026-02-23 05:26:59.770229944 +0100
+@@ -27,6 +27,7 @@
+ #include <boost/cstdint.hpp>
+ #include <boost/algorithm/string/predicate.hpp>
+ #include <boost/filesystem/operations.hpp>
++#include <boost/filesystem/directory.hpp>
+ #include <boost/range/size.hpp>
+ 
+ #include "util/console.hpp"
